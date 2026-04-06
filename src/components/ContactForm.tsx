@@ -36,7 +36,10 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="w-full py-24 bg-white">
+    <section
+      className="w-full py-24 bg-white"
+      aria-label="Contact The EduGate School Mirpurkhas for admissions and inquiries"
+    >
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT SIDE (CONTENT) */}
@@ -48,12 +51,12 @@ export default function ContactForm() {
           className="space-y-6"
         >
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-            Let’s Build Your Child’s Future Together
+            Contact The EduGate School Mirpurkhas for Admissions & Inquiries
           </h2>
 
           <p className="text-gray-600">
-            Have questions or want to enroll? Reach out to us and our team will
-            guide you through everything.
+            Get in touch with The EduGate School Mirpurkhas for admissions,
+            academic guidance, and general inquiries. Our team is ready to assist parents and students.
           </p>
 
           {/* Highlights */}
@@ -61,7 +64,7 @@ export default function ContactForm() {
             {[
               "Quick response within 24 hours",
               "Friendly and professional staff",
-              "Guidance for admissions",
+              "Guidance for admissions in Mirpurkhas",
               "Support for parents & students",
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3 text-sm text-gray-700">

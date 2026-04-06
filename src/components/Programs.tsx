@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const programs = [
   {
-    title: "Primary Classes",
+    title: "Primary Classes in Mirpurkhas",
     description:
-      "Strong foundation for young learners with focus on basics, discipline, reading, writing, and cognitive development.",
+      "Strong foundation for young learners in Mirpurkhas with focus on basics, discipline, reading, writing, and cognitive development.",
     details: [
       "Basic Math & English",
       "Concept Building",
@@ -16,9 +16,9 @@ const programs = [
     duration: "Daily Classes",
   },
   {
-    title: "Secondary Classes",
+    title: "Secondary Classes in Mirpurkhas",
     description:
-      "Advanced academic support for middle and high school students with subject-wise specialization and exam preparation.",
+      "Advanced academic support for middle and high school students in Mirpurkhas with subject-wise specialization and exam preparation.",
     details: [
       "Subject Specialists",
       "Exam Preparation",
@@ -28,9 +28,9 @@ const programs = [
     duration: "Regular Schedule",
   },
   {
-    title: "Test Preparation",
+    title: "Test Preparation in Mirpurkhas",
     description:
-      "Focused preparation for board exams and entry tests with mock tests, past papers, and strategy guidance.",
+      "Focused preparation for board exams and entry tests with mock tests, past papers, and strategy guidance for students in Mirpurkhas.",
     details: [
       "Mock Exams",
       "Past Papers Practice",
@@ -40,9 +40,9 @@ const programs = [
     duration: "Short Term Intensive",
   },
   {
-    title: "Academic Support",
+    title: "Academic Support in Mirpurkhas",
     description:
-      "Personalized guidance for students who need extra attention in specific subjects or topics.",
+      "Personalized guidance for students in Mirpurkhas who need extra attention in specific subjects or topics.",
     details: [
       "One-on-One Help",
       "Weak Subject Focus",
@@ -66,12 +66,13 @@ export default function Programs() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
+          {/* SEO H2 */}
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900">
-            Our Programs
+            School Programs in Mirpurkhas
           </h2>
+
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Carefully designed learning programs that focus on academic excellence,
-            skill development, and student growth.
+            The Edugate School offers a variety of structured academic programs in Mirpurkhas designed to improve student performance, build strong concepts, and prepare students for future success.
           </p>
         </motion.div>
 
@@ -88,7 +89,6 @@ export default function Programs() {
               whileHover={{ y: -6 }}
               className="relative group"
             >
-              {/* Glass Card */}
               <div className="h-full bg-white/60 backdrop-blur-md border border-white/40 rounded-2xl p-6 shadow-md hover:shadow-xl transition">
 
                 {/* Title */}
@@ -101,7 +101,7 @@ export default function Programs() {
                   {program.description}
                 </p>
 
-                {/* Duration Badge */}
+                {/* Duration */}
                 <div className="inline-block mb-4 px-3 py-1 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full">
                   {program.duration}
                 </div>
@@ -119,7 +119,6 @@ export default function Programs() {
                   ))}
                 </div>
 
-                {/* Hover Line */}
                 <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all duration-300"></div>
 
               </div>

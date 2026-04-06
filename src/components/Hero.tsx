@@ -19,6 +19,7 @@ export default function Hero() {
           }}
           className="space-y-6"
         >
+          {/* ✅ SEO H1 (VERY IMPORTANT) */}
           <motion.h1
             variants={{
               hidden: { opacity: 0, y: 30 },
@@ -26,12 +27,13 @@ export default function Hero() {
             }}
             className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight"
           >
-            Future Starts
+            Best School in Mirpurkhas
             <span className="block text-blue-600">
-              From Here
+              The Edugate School
             </span>
           </motion.h1>
 
+          {/* ✅ SEO PARAGRAPH */}
           <motion.p
             variants={{
               hidden: { opacity: 0, y: 30 },
@@ -39,10 +41,10 @@ export default function Hero() {
             }}
             className="text-gray-600 text-base md:text-lg max-w-md"
           >
-            A new way of learning where discipline meets innovation and students grow with confidence.
+            The Edugate School in Mirpurkhas provides high-quality education with experienced teachers, modern classrooms, and a strong focus on student success and personal development.
           </motion.p>
 
-          {/* Stats Inline */}
+          {/* Stats */}
           <motion.div
             variants={{
               hidden: {},
@@ -66,10 +68,9 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* RIGHT CREATIVE LAYOUT */}
+        {/* RIGHT IMAGE */}
         <div className="relative w-full h-[400px] md:h-[500px]">
 
-          {/* MAIN IMAGE */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -78,13 +79,14 @@ export default function Hero() {
           >
             <Image
               src="/logo.jpeg"
-              alt="School"
+              alt="The Edugate School campus building in Mirpurkhas"
               fill
+              priority
               className="object-cover"
             />
           </motion.div>
 
-          {/* FLOATING CARD 1 */}
+          {/* Floating Cards */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -93,11 +95,10 @@ export default function Hero() {
             className="absolute bottom-0 left-6 bg-white/60 backdrop-blur-md border border-white/40 rounded-xl p-4 shadow-lg"
           >
             <p className="text-sm font-semibold text-blue-600">
-              Modern Learning
+              Modern Learning Environment
             </p>
           </motion.div>
 
-          {/* FLOATING CARD 2 */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -106,7 +107,7 @@ export default function Hero() {
             className="absolute top-10 right-0 bg-white/60 backdrop-blur-md border border-white/40 rounded-xl p-4 shadow-lg"
           >
             <p className="text-sm font-semibold text-blue-600">
-              Expert Teachers
+              Experienced Teachers
             </p>
           </motion.div>
 

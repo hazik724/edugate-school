@@ -14,7 +14,10 @@ export default function TestimonialsClient({
   testimonials: Testimonial[];
 }) {
   return (
-    <section className="w-full py-20 bg-white">
+    <section
+      className="w-full py-20 bg-white"
+      aria-label="Testimonials from parents and students of The EduGate School Mirpurkhas"
+    >
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -26,10 +29,12 @@ export default function TestimonialsClient({
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900">
-            What People Say
+            Testimonials – Parents & Students Reviews of The EduGate School Mirpurkhas
           </h2>
+
           <p className="text-gray-600 mt-4 max-w-xl mx-auto">
-            Feedback from parents and students who experienced our learning environment.
+            Read feedback from parents and students about academic quality,
+            teaching methods, and learning environment at The EduGate School.
           </p>
         </motion.div>
 
@@ -71,7 +76,6 @@ export default function TestimonialsClient({
                     </p>
                   </div>
 
-                  {/* Decorative Dot */}
                   <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
 
                 </div>

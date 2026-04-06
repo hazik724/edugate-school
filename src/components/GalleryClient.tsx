@@ -9,7 +9,10 @@ export default function GalleryClient({ images }: { images: any[] }) {
   const [selected, setSelected] = useState<number | null>(null)
 
   return (
-    <section className="w-full py-20 bg-gradient-to-r from-blue-50 via-white to-blue-50">
+    <section
+      className="w-full py-20 bg-gradient-to-r from-blue-50 via-white to-blue-50"
+      aria-label="School gallery of The EduGate School"
+    >
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Header */}
@@ -19,10 +22,11 @@ export default function GalleryClient({ images }: { images: any[] }) {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
-            Our Gallery
+            School Gallery – Student Activities at The EduGate School Mirpurkhas
           </h2>
+
           <p className="text-gray-600 mt-4">
-            Moments from our classrooms, activities, and events
+            Explore classroom moments, student activities, events, and learning environment at The EduGate School.
           </p>
         </motion.div>
 
@@ -40,13 +44,13 @@ export default function GalleryClient({ images }: { images: any[] }) {
             >
               <Image
                 src={urlFor(item.image).url()}
-                alt="Gallery"
+                alt={`The EduGate School Mirpurkhas student activity ${index + 1}`}
                 width={500}
                 height={700}
+                loading="lazy"
                 className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition duration-300"
               />
 
-              {/* Hover Overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-300 rounded-2xl" />
             </motion.div>
           ))}
@@ -64,8 +68,6 @@ export default function GalleryClient({ images }: { images: any[] }) {
             exit={{ opacity: 0 }}
             onClick={() => setSelected(null)}
           >
-
-            {/* Image */}
             <motion.div
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
@@ -74,18 +76,16 @@ export default function GalleryClient({ images }: { images: any[] }) {
             >
               <Image
                 src={urlFor(images[selected].image).url()}
-                alt="Preview"
+                alt={`The EduGate School Mirpurkhas gallery preview ${selected + 1}`}
                 width={1000}
                 height={800}
                 className="w-full h-auto rounded-xl"
               />
             </motion.div>
 
-            {/* Close Hint */}
             <span className="absolute top-6 right-6 text-white text-sm opacity-70">
               Click anywhere to close
             </span>
-
           </motion.div>
         )}
       </AnimatePresence>

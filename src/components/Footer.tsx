@@ -64,15 +64,16 @@ export default function Footer() {
           <div className="text-sm text-gray-600 space-y-3">
             <p>
               <span className="font-semibold text-gray-800">Address:</span>{" "}
-              Your School Address
+              Lal chand garden near Ibn-e-rushd girls Collage, Mirpurkhas, Pakistan
             </p>
             <p>
               <span className="font-semibold text-gray-800">Phone:</span>{" "}
-              +92 XXX XXXXXXX
+              +92 333 2479128
+              +92 311 3839916
             </p>
             <p>
               <span className="font-semibold text-gray-800">Email:</span>{" "}
-              info@edugate.com
+              salmanhussain@gmail.com
             </p>
           </div>
         </div>
