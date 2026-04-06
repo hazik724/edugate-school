@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     "English medium school in Mirpurkhas",
     "Top school in Mirpurkhas",
   ],
+  icons: {
+    icon: "/favicon.ico",
+  },
   authors: [{ name: "The Edugate School" }],
   creator: "The Edugate School",
   openGraph: {
